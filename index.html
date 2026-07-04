@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Album Bratranzzz od Pinkmvne a DJ Kadr. Countdown do vydani."
+    />
+    <title>ALBUM BRATRANZZZ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page" aria-label="Album Bratranzzz">
+      <section class="machine" aria-label="Pokladna s uctenkou">
+        <div class="receipt-wrap">
+          <article class="receipt" aria-label="Uctenka">
+            <div class="receipt__tear receipt__tear--top" aria-hidden="true"></div>
+            <h1>BRATRANZZZ</h1>
+            <p class="receipt__artists">PINKMVNE <span>X</span> DJ KADR</p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <section class="countdown" aria-label="Odpocet do vydani alba">
+              <p class="countdown__title">VYCHAZI ZA</p>
+              <div class="countdown__grid" data-countdown>
+                <div>
+                  <strong data-days>--</strong>
+                  <span>DNI</span>
+                </div>
+                <div>
+                  <strong data-hours>--</strong>
+                  <span>HOD</span>
+                </div>
+                <div>
+                  <strong data-minutes>--</strong>
+                  <span>MIN</span>
+                </div>
+                <div>
+                  <strong data-seconds>--</strong>
+                  <span>SEK</span>
+                </div>
+              </div>
+              <p class="countdown__date" data-release-date></p>
+            </section>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <nav class="items" aria-label="Spotify odkazy">
+              <a
+                href="https://open.spotify.com/artist/4p0sIPCjLmNUkVGszUZ8Hq?si=sD54MM4bR-iMrDsUaI4BHg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>SPOTIFY PINKMVNE</span>
+                <strong>OPEN</strong>
+              </a>
+              <a
+                href="https://open.spotify.com/artist/1GFQTS0zSjX2tLhV37rFkU?si=pTSxUhljSlSHCkOeI1foKw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>SPOTIFY DJ KADR</span>
+                <strong>OPEN</strong>
+              </a>
+            </nav>
+
+            <p class="receipt__footer">THANK YOU FOR LISTEN!<br />COME AGAIN</p>
+            <div class="barcode" aria-hidden="true"></div>
+            <div class="receipt__tear receipt__tear--bottom" aria-hidden="true"></div>
+          </article>
+        </div>
+
+        <div class="register-stage" aria-hidden="true">
+          <img
+            class="register-photo"
+            src="./assets/register.png"
+            alt=""
+            onload="document.body.classList.add('has-register-photo')"
+            onerror="this.remove()"
+          />
+          <div class="register">
+            <div class="register__slot"></div>
+            <div class="register__screen">
+              <span>BRATRANZZZ</span>
+            </div>
+            <div class="register__body">
+              <div class="register__display">000.00</div>
+              <div class="register__keys">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="register__drawer"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
